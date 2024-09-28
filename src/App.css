@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+    background-color: #121212; /* Dark background for the app */
+  }
+
+.App {
+    background-color: #121212; /* Dark background for the app */
+    color: #e0e0e0; /* Light gray text for better contrast */
+   
+  }
+  
+  header {
+    background-color: #1e3a8a; /* Keep the dark blue header */
+    color: white;
+  }
+  
+  .wrapper {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000px;
+  }
+  
+  .hero_intro h2, h3, h1 {
+    color: #ffffff;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+  
+  .bmi_calculator {
+    background-color: #1f1f1f; /* Darker background for calculator section */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5); /* Stronger shadow for contrast */
+    width: 600px;
+  }
+  
+  .bmi_calculator h3 {
+    color: #1e90ff; /* Slightly lighter blue for the heading */
+  }
+  
+  .bmi_calculator input, .bmi_calculator select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444; /* Slightly darker border to match the dark theme */
+    background-color: #333; /* Dark input background */
+    color: #f0f0f0; /* Light text inside inputs */
+    border-radius: 5px;
+  }
+  
+  .bmi_calculator input::placeholder, .bmi_calculator select option {
+    color: #b3b3b3; /* Lighter placeholder text for better readability */
+  }
+  
+  .bmi_calculator button {
+    background-color: #2563eb; /* Keep the blue button */
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bmi_calculator button:hover {
+    background-color: #1d4db5; /* Darken on hover */
+  }
+  
+  .mt-4 {
+    margin-top: 16px;
+  }
+  
+  .text-green-600 {
+    color: #28a745; /* Make the green text stand out more */
+  }
+  
+  .text-red-600 {
+    color: #ff4d4d; /* Brighten the error text for better visibility */
+  }
+  
+  .error-message {
+    color: #ff4d4d; /* Brighter red error message */
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  /* Enhancements for responsive design */
+  @media (max-width: 768px) {
+    .bmi_calculator {
+      max-width: 90%;
+    }
+  
+    .hero_intro {
+      text-align: center;
+    }
+  }
+  
+  /* Improved focus states for better accessibility */
+  .bmi_calculator input:focus, .bmi_calculator select:focus {
+    outline: none;
+    border-color: #1e90ff; /* Light blue focus indicator for inputs */
+    box-shadow: 0 0 5px #1e90ff; /* Add focus shadow */
+  }
+  
+  .bmi_calculator button:focus {
+    outline: none;
+    box-shadow: 0 0 10px #2563eb; /* Add focus shadow for button */
+  }
+  
